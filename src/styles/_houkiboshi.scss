@@ -1,0 +1,52 @@
+@import "variables";
+
+.forms {
+  padding: 16px 0;
+
+  .tab-content {
+    padding-top: 16px;
+  }
+
+  .control-label {
+    .required {
+      color: $brand-danger
+    }
+  }
+
+  .field-description {
+    font-size: $font-size-small;
+  }
+
+  // react-jsonschema-form
+  .rjsf {
+    .field {
+      margin-top: 24px;
+      margin-bottom: 24px;
+
+      .help-description {
+        .icon {
+          width: 1.1em;
+          height: 1.1em;
+          margin-right: .6em;
+        }
+      }
+    }
+
+    .form-group.field-array {
+      margin-top: 32px;
+      margin-bottom: 32px
+    }
+  }
+
+  .output-container {
+    position: relative;
+    textarea {
+      background-color: darken($body-bg,  2%);
+      transition: background-color .1s ease;
+      &:focus {
+        background-color: lighten($body-bg, 2%);
+      }
+    }
+
+  }
+}

@@ -1,0 +1,24 @@
+defaultSeverity: error
+extends:
+  - tslint:recommended
+  - tslint-config-standard
+  - tslint-react
+  - tslint-config-prettier
+jsRules: {}
+rules:
+  no-console:
+    severity: warn
+  no-debugger:
+    severity: warn
+  no-unused-variable:
+    severity: warn
+  no-unused-expression:
+    - true
+    - allow-fast-null-checks
+  variable-name:
+    - true
+    - check-format
+    - allow-pascal-case
+    - allow-leading-underscore
+  object-literal-sort-keys: false
+rulesDirectory: []
